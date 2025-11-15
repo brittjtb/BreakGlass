@@ -1,15 +1,15 @@
 
 # Home-mini-pc (jellyfin server)
 Host minipc
-	HostName 192.168.1.30
-	User jbritt
-	IdentityFile ~/.ssh/homePC_ssh_key
+	HostName local ip/isp DNS
+	User login as user
+	IdentityFile ~/.ssh/ssh_key
 	IdentitiesOnly yes
 
 # Home-mini-pc (git server)
 Host gitserver
 	HostName brittjtb.hopto.org
-	Port 4422
-	User git
-	IdentityFile ~/.ssh/homePC_ssh_key
+	Port router port/default 22
+	User login as this user
+	IdentityFile ~/.ssh/ssh_key
 	IdentitiesOnly yes
